@@ -1,6 +1,6 @@
 # TeamAvail — Local CI/CD Pipeline
 
-TeamAvail is a simple **team availability tracker** that demonstrates a **minimal local CI/CD setup** using **Node.js, Docker, and Docker Compose**, with optional Python development tools for linting and testing.
+TeamAvail is a simple **team availability tracker** that demonstrates a **minimal local CI/CD setup** using **Node.js, Docker, and Docker Compose**
 
 ---
 
