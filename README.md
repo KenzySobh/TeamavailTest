@@ -26,3 +26,5 @@ Use the provided CI script to build the Docker image and start the app:
 ```bash
 ./ci.sh
 ```
+
+### Database Implementation will be in the next phase
