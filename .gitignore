@@ -2,11 +2,14 @@
 .vscode/
 .idea/
 
-# OS
-.DS_Store
-
 # Docker
 docker-compose.override.yml
 
 # Logs
 *.log
+
+# Node.js dependencies
+node_modules/
+
+# Python virtual environment
+.venv/
