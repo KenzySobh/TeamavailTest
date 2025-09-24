@@ -57,3 +57,18 @@ now when chaning any thing in the data, it is changed in the history.json file a
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
+## Problems Solved 
+
+### Data saving in postgres problem 
+Problem: Data Wasn’t Saved in Postgres
+
+At first, the application only wrote the data into the output/history.json file, and nothing was being stored inside Postgres.
+When checking the database with:
+```bash
+docker exec -it teamavail_db psql -U teamuser -d teamdb
+\dt;
+``` 
+Solution: Add Postgres Service in Docker Compose
+
+The issue was fixed by explicitly adding a Postgres service in the docker-compose.yml file
+Postgres runs as part of the project stack, and the backend (server.js) can connect to it properly.
