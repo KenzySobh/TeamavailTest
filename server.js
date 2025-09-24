@@ -2,8 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
-const { Pool } = require('pg');   // <-- Add Postgres
-
+const { Pool } = require('pg');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -58,7 +57,7 @@ app.post('/save-history', (req, res) => {
   });
 });
 
-// Example route to test DB
+
 app.get('/db-time', async (req, res) => {
   try {
     const result = await pool.query('SELECT NOW() as now');

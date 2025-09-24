@@ -27,7 +27,7 @@ function renderTable() {
   const tableBody = document.getElementById("tableBody");
   tableBody.innerHTML = "";
 
-  namesData.sort((a, b) => a.name.localeCompare(b.name));
+  //namesData.sort((a, b) => a.name.localeCompare(b.name));
 
   namesData.forEach((emp, index) => {
     const row = document.createElement("tr");
