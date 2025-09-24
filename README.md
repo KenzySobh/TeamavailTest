@@ -51,14 +51,32 @@ docker compose up --build -d
 when running the docker compose the image is build and postgres database is connected sucessfully 
 ![docker containers](image.png)
 
+## Terraform 
+
+The terraform/ directory contains IaC (Infrastructure as Code) scripts to provision cloud resources such as:
+
+Virtual machines or container services
+Databases 
+
+```bash
+cd Terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+### Jenkins Pipeline
+A Jenkins pipeline is included to automate the app lifecycle.
+It runs linting, testing, builds the Docker image, and then starts the containers using Docker Compose.
+
+the code is in Jenkinsfile
+
 ## Data Saved
 now when chaning any thing in the data, it is changed in the history.json file and the postgres 
 
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-4.png)
-
-
 
 
 ## Problems Solved 
