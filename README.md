@@ -65,7 +65,7 @@ terraform plan
 terraform apply
 ```
 
-### Jenkins Pipeline
+## Jenkins Pipeline
 A Jenkins pipeline is included to automate the app lifecycle.
 It runs linting, testing, builds the Docker image, and then starts the containers using Docker Compose.
 
